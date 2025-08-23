@@ -20,7 +20,6 @@
                 </ul>
             </nav>
             <div id="user-actions">
-                <!-- ĐÃ THAY ĐỔI: Chuyển button thành a -->
                 <a href="login.html" class="nav-button">Đăng Nhập</a>
                 <a href="login.html#register" class="nav-button">Đăng Ký</a>
             </div>
@@ -47,17 +46,26 @@
                 <button class="filter-btn" data-region="bac">Miền Bắc</button>
                 <button class="filter-btn" data-region="trung">Miền Trung</button>
                 <button class="filter-btn" data-region="nam">Miền Nam</button>
+                <!-- ĐÃ THÊM: Nút filter Yêu thích, ban đầu sẽ bị ẩn -->
+                <button class="filter-btn hidden" data-region="favorites" id="favorites-filter-btn"><i class="fas fa-heart"></i> Yêu Thích</button>
             </div>
         </div>
-        <div class="category">
+
+        <!-- ĐÃ THÊM: Khu vực dành riêng cho các món ăn yêu thích -->
+        <div id="favorites-section" class="category hidden">
+            <h3><i class="fas fa-heart"></i> Món Ăn Yêu Thích</h3>
+            <div class="dish-grid" id="favorite-dishes"></div>
+        </div>
+
+        <div class="category" id="main-dishes-section">
             <h3><i class="fas fa-utensils"></i> Món Chính Truyền Thống</h3>
             <div class="dish-grid" id="main-dishes"></div>
         </div>
-        <div class="category">
+        <div class="category" id="snack-dishes-section">
             <h3><i class="fas fa-cookie-bite"></i> Món Ăn Vặt & Đường Phố</h3>
             <div class="dish-grid" id="snack-dishes"></div>
         </div>
-        <div class="category">
+        <div class="category" id="specialty-dishes-section">
             <h3><i class="fas fa-gifts"></i> Đặc Sản Vùng Miền</h3>
             <div class="dish-grid" id="specialty-dishes"></div>
         </div>
@@ -66,8 +74,6 @@
     <footer>
         <p>&copy; người đâu thưởng rau má</p>
     </footer>
-
-    <!-- ĐÃ XÓA modal Đăng nhập và Đăng ký -->
 
     <!-- Dish Detail Modal -->
     <div id="dish-detail-modal" class="modal">
@@ -94,6 +100,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-
-
-

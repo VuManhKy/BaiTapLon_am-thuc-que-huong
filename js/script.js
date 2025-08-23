@@ -1,21 +1,129 @@
-// FILE script.js CỦA TRANG CHỦ - ĐÃ ĐƯỢC RÚT GỌN
+// FILE script.js CỦA TRANG CHỦ - ĐÃ ĐƯỢC CẬP NHẬT TÍNH NĂNG YÊU THÍCH
 
 document.addEventListener('DOMContentLoaded', () => {
     const dishes = [
-    // Món chính
-    { id: 1, name: 'Phở Bò', category: 'main', region: 'bac', image: 'images/pho-bo.jpg', description: 'Phở bò là tinh hoa ẩm thực Hà Nội, nổi bật với nước dùng ngọt thanh ninh từ xương bò cùng quế, hồi, gừng nướng. Bánh phở mềm, thịt bò tươi thái mỏng, ăn kèm chanh, ớt và rau thơm tạo nên hương vị đặc trưng khó quên.', ingredients: 'Bánh phở, xương bò, thịt bò tái/chín, gừng, hành tím, quế, hồi, thảo quả, rau thơm, chanh, ớt, nước mắm, muối, tiêu.' },
-    { id: 2, name: 'Bún Chả', category: 'main', region: 'bac', image: 'images/bun-cha.jpg', description: 'Bún chả là món ăn nổi tiếng Hà Nội, với chả thịt lợn nướng trên than hoa vàng ruộm, ăn kèm bún tươi và nước mắm chua ngọt, tạo nên hương vị hài hòa.', ingredients: 'Bún tươi, thịt ba chỉ, thịt nạc vai, nước mắm, đường, giấm, tỏi, ớt, rau sống.' },
-    { id: 3, name: 'Bánh Mì', category: 'main', region: 'nam', image: 'images/banh-mi.jpg', description: 'Bánh mì Việt Nam là món ăn đường phố nổi tiếng thế giới, với ổ baguette giòn rụm kẹp pate, thịt nguội, rau dưa và sốt đặc trưng.', ingredients: 'Bánh mì, pate, thịt nguội, chả lụa, dưa leo, đồ chua, rau thơm, sốt mayonnaise.' },
-    { id: 4, name: 'Cơm Tấm', category: 'main', region: 'nam', image: 'images/com-tam.jpg', description: 'Cơm tấm là đặc sản Sài Gòn, hạt cơm vỡ mềm dẻo ăn kèm sườn nướng, bì, chả trứng và chan nước mắm pha đậm đà.', ingredients: 'Gạo tấm, sườn nướng, bì heo, chả trứng, mỡ hành, dưa leo, đồ chua, nước mắm.' },
-    { id: 5, name: 'Bún Bò Huế', category: 'main', region: 'trung', image: 'images/bun-bo-hue.jpg', description: 'Bún bò Huế nổi tiếng với vị cay nồng và nước lèo đậm đà từ xương bò, giò heo cùng mắm ruốc đặc trưng xứ Huế.', ingredients: 'Bún, bắp bò, giò heo, mắm ruốc, sả, ớt, hành lá, rau sống.' },
-    { id: 6, name: 'Cao Lầu', category: 'main', region: 'trung', image: 'images/cao-lau.jpg', description: 'Cao Lầu là đặc sản Hội An với sợi mì vàng dai, thịt xá xíu thơm đậm đà và rau sống tươi xanh.', ingredients: 'Mì cao lầu, thịt heo xá xíu, giá đỗ, rau thơm, tóp mỡ, nước dùng.'},
+   // Món chính
+{ 
+  id: 1, 
+  name: 'Phở Bò', 
+  category: 'main', 
+  region: 'bac', 
+  image: 'images/pho-bo.jpg', 
+  description: 'Phở Bò là biểu tượng tinh hoa của ẩm thực Hà Nội, được cả thế giới biết đến. Nước dùng trong, ngọt thanh từ xương bò hầm hàng giờ với quế, hồi, gừng nướng mang lại hương vị thơm ngào ngạt. Sợi phở mềm mịn, thịt bò tươi thái mỏng chín tái trong nước dùng nóng hổi, điểm thêm hành lá, rau thơm, chanh và ớt. Mỗi tô phở không chỉ ngon miệng mà còn gợi lên cảm giác ấm áp, gần gũi, là món ăn sáng quen thuộc của người Việt và là trải nghiệm khó quên với du khách.', 
+  ingredients: 'Bánh phở, xương bò, thịt bò tái/chín, gừng, hành tím, quế, hồi, thảo quả, rau thơm, hành lá, chanh, ớt, nước mắm, muối, tiêu.' 
+},
+
+{ 
+  id: 2, 
+  name: 'Bún Chả', 
+  category: 'main', 
+  region: 'bac', 
+  image: 'images/bun-cha.jpg', 
+  description: 'Bún Chả là món ăn gắn liền với đời sống người Hà Nội, giản dị mà tinh tế. Thịt ba chỉ và nạc vai được tẩm ướp gia vị rồi nướng trên than hoa dậy mùi thơm lừng. Khi ăn, bún tươi trắng mềm được chan cùng bát nước mắm chua ngọt, trong đó có những miếng chả nướng vàng ruộm. Rau sống tươi mát đi kèm giúp cân bằng vị béo của thịt và sự đậm đà của nước chấm. Bún Chả không chỉ hấp dẫn thực khách trong nước mà còn từng “gây sốt” với bạn bè quốc tế.', 
+  ingredients: 'Bún tươi, thịt ba chỉ, thịt nạc vai, nước mắm, đường, giấm, tỏi, ớt, hạt tiêu, cà rốt, đu đủ xanh, rau thơm, xà lách.' 
+},
+
+{ 
+  id: 3, 
+  name: 'Bánh Mì', 
+  category: 'main', 
+  region: 'nam', 
+  image: 'images/banh-mi.jpg', 
+  description: 'Bánh Mì Việt Nam là niềm tự hào của ẩm thực đường phố, đã nhiều lần lọt top những món ăn ngon nhất thế giới. Vỏ bánh giòn rụm vàng ươm, ruột xốp mềm, kết hợp cùng lớp nhân phong phú: pate béo ngậy, thịt nguội, chả lụa, rau dưa giòn mát và sốt mayonnaise đặc trưng. Tùy vùng miền, bánh mì có nhiều biến thể như bánh mì thịt nướng, bánh mì xíu mại hay bánh mì chay. Dù đơn giản hay cầu kỳ, ổ bánh mì nhỏ bé vẫn chứa đựng sự sáng tạo và tinh hoa ẩm thực Việt.', 
+  ingredients: 'Bánh mì baguette, pate, thịt nguội, chả lụa, dưa leo, đồ chua (cà rốt, củ cải), rau thơm, xà lách, sốt mayonnaise, nước tương, ớt.' 
+},
+
+{ 
+  id: 4, 
+  name: 'Cơm Tấm', 
+  category: 'main', 
+  region: 'nam', 
+  image: 'images/com-tam.jpg', 
+  description: 'Cơm Tấm là đặc sản Sài Gòn, nổi bật với hạt gạo tấm vỡ mềm dẻo, ăn kèm nhiều món mặn hấp dẫn như sườn nướng, bì, chả trứng. Trên đĩa cơm, mỡ hành béo ngậy phủ lên hạt cơm trắng, thêm chút dưa chua, dưa leo tươi mát và chan nước mắm pha đậm đà. Cơm Tấm không chỉ là bữa ăn bình dân quen thuộc mà còn trở thành nét văn hóa ẩm thực của miền Nam, được người dân và du khách yêu thích.', 
+  ingredients: 'Gạo tấm, sườn nướng, bì heo, chả trứng, mỡ hành, dưa leo, cà chua, đồ chua, trứng ốp la, nước mắm pha.' 
+},
+
+{ 
+  id: 5, 
+  name: 'Bún Bò Huế', 
+  category: 'main', 
+  region: 'trung', 
+  image: 'images/bun-bo-hue.jpg', 
+  description: 'Bún Bò Huế mang đậm dấu ấn cố đô, nổi tiếng với vị cay nồng, nước lèo đậm đà nấu từ xương bò, giò heo và mắm ruốc đặc trưng. Sợi bún to tròn, thịt bò thái lát, chả cua, giò heo được xếp đầy trong tô nước dùng đỏ au hấp dẫn. Rau sống, hoa chuối thái sợi và chanh ớt ăn kèm khiến hương vị thêm trọn vẹn. Đây không chỉ là món ăn no bụng mà còn là linh hồn của ẩm thực xứ Huế.', 
+  ingredients: 'Bún sợi to, bắp bò, giò heo, chả cua, huyết heo, mắm ruốc, sả, ớt, hành lá, rau sống, hoa chuối bào, chanh, nước mắm, muối.' 
+},
+
+{ 
+  id: 6, 
+  name: 'Cao Lầu', 
+  category: 'main', 
+  region: 'trung', 
+  image: 'images/cao-lau.jpg', 
+  description: 'Cao Lầu là món ăn gắn liền với phố cổ Hội An, với sợi mì vàng óng dai đặc biệt, được chế biến từ gạo ngâm trong nước giếng Bá Lễ. Topping gồm thịt heo xá xíu ướp đậm đà, tóp mỡ giòn rụm, rau sống tươi xanh và ít nước dùng chan vừa phải. Cao Lầu là sự hòa quyện của vị mặn mà, béo ngậy, thanh mát, mang lại trải nghiệm độc đáo khó tìm thấy ở nơi khác. Đây được xem như “linh hồn” ẩm thực của Hội An.', 
+  ingredients: 'Mì Cao Lầu, thịt heo xá xíu, tóp mỡ, giá đỗ, rau sống (xà lách, rau thơm), nước dùng ninh từ xương, hành phi.' 
+},
+
     // Món ăn vặt
-    { id: 7, name: 'Nem Rán (Chả Giò)', category: 'snack', region: 'bac', image: 'images/nem-ran.jpg', description: 'Nem rán là món ăn giòn rụm bên ngoài, nhân thịt và rau củ mềm thơm, thường xuất hiện trong mâm cỗ truyền thống.', ingredients: 'Thịt heo băm, mộc nhĩ, miến, cà rốt, trứng, bánh đa nem, gia vị.' },
-    { id: 8, name: 'Bánh Xèo', category: 'snack', region: 'nam', image: 'images/banh-xeo.jpg', description: 'Bánh xèo miền Nam có lớp vỏ vàng giòn, nhân tôm thịt giá đỗ, ăn kèm rau sống và nước mắm chua ngọt.', ingredients: 'Bột gạo, bột nghệ, tôm, thịt heo, giá đỗ, rau sống, nước mắm.' },
-    { id: 9, name: 'Gỏi Cuốn', category: 'snack', region: 'nam', image: 'images/goi-cuon.jpg', description: 'Gỏi cuốn thanh mát với bánh tráng cuốn tôm, thịt, bún và rau, chấm cùng nước mắm pha hoặc tương đậu phộng.', ingredients: 'Bánh tráng, bún, tôm luộc, thịt heo luộc, rau thơm, xà lách, nước chấm.' },
-    { id: 10, name: 'Bột Chiên', category: 'snack', region: 'nam', image: 'images/bot-chien.jpg', description: 'Bột chiên là món ăn vặt nổi tiếng ở Sài Gòn, từng miếng bột giòn bên ngoài, dẻo bên trong, ăn kèm trứng và đu đủ bào chua ngọt.', ingredients: 'Bột gạo, trứng, hành lá, đu đủ bào, xì dầu, tương ớt.' },
-    { id: 11, name: 'Chè Ba Miền', category: 'snack', region: 'all', image: 'images/che.jpg', description: 'Chè Việt Nam đa dạng với đủ loại nguyên liệu như đậu, thạch, nước cốt dừa, mang đến vị ngọt mát đặc trưng.', ingredients: 'Đậu xanh, đậu đỏ, đậu đen, bột báng, thạch, nước cốt dừa, đường.' },
-    { id: 12, name: 'Bánh Tráng Nướng', category: 'snack', region: 'trung', image: 'images/banh-trang-nuong.jpg', description: 'Bánh tráng nướng  “pizza Việt Nam”  với vỏ giòn rụm, trứng, hành lá và nhiều loại topping hấp dẫn.', ingredients: 'Bánh tráng, trứng cút, hành lá, xúc xích, ruốc khô, sốt mayonnaise.' },
+{ 
+  id: 7, 
+  name: 'Nem Rán (Chả Giò)', 
+  category: 'snack', 
+  region: 'bac', 
+  image: 'images/nem-ran.jpg', 
+  description: 'Nem Rán (hay còn gọi là Chả Giò ở miền Nam) là món ăn truyền thống trong các dịp lễ Tết và mâm cỗ gia đình. Những chiếc nem được cuốn khéo léo từ lớp bánh đa nem mỏng, nhân thịt heo, mộc nhĩ, miến, cà rốt và trứng, sau đó chiên vàng giòn rụm. Khi cắn, lớp vỏ giòn tan hòa quyện với phần nhân mềm thơm, đậm đà. Nem rán thường ăn kèm rau sống, bún và nước chấm pha chua ngọt, tạo nên hương vị hấp dẫn khó cưỡng.', 
+  ingredients: 'Thịt heo băm, mộc nhĩ, miến dong, cà rốt, trứng gà, hành khô, bánh đa nem, hạt tiêu, nước mắm, dầu ăn, rau sống.' 
+},
+
+{ 
+  id: 8, 
+  name: 'Bánh Xèo', 
+  category: 'snack', 
+  region: 'nam', 
+  image: 'images/banh-xeo.jpg', 
+  description: 'Bánh Xèo miền Nam có lớp vỏ vàng óng, giòn rụm nhờ bột gạo trộn với bột nghệ và nước cốt dừa. Nhân bánh gồm tôm, thịt heo, giá đỗ, đôi khi thêm nấm hoặc hải sản. Khi ăn, người ta cắt bánh, cuốn cùng rau sống và chấm nước mắm chua ngọt. Sự kết hợp của lớp vỏ giòn, nhân đậm đà và rau tươi mát tạo nên trải nghiệm ẩm thực độc đáo, khiến bánh xèo trở thành món ăn vặt được yêu thích khắp ba miền.', 
+  ingredients: 'Bột gạo, bột nghệ, nước cốt dừa, tôm, thịt ba chỉ, giá đỗ, nấm, hành lá, rau sống, nước mắm pha.' 
+},
+
+{ 
+  id: 9, 
+  name: 'Gỏi Cuốn', 
+  category: 'snack', 
+  region: 'nam', 
+  image: 'images/goi-cuon.jpg', 
+  description: 'Gỏi Cuốn là món ăn thanh mát và bổ dưỡng, thường được chọn cho những bữa ăn nhẹ. Bánh tráng mềm dẻo cuốn cùng tôm, thịt heo luộc, bún tươi và rau sống. Khi ăn, gỏi cuốn chấm với nước mắm tỏi ớt hoặc tương đậu phộng béo ngậy, mang lại cảm giác vừa thanh đạm vừa đậm đà. Đây là món ăn nổi tiếng của Việt Nam được nhiều du khách quốc tế ưa chuộng bởi sự đơn giản nhưng tinh tế.', 
+  ingredients: 'Bánh tráng, bún tươi, tôm luộc, thịt heo luộc, rau thơm, xà lách, hẹ, nước mắm chua ngọt hoặc tương đậu phộng.' 
+},
+
+{ 
+  id: 10, 
+  name: 'Bột Chiên', 
+  category: 'snack', 
+  region: 'nam', 
+  image: 'images/bot-chien.jpg', 
+  description: 'Bột Chiên là món ăn vặt quen thuộc với học sinh, sinh viên Sài Gòn. Những miếng bột gạo được chiên vàng giòn bên ngoài, dẻo bên trong, rồi đảo cùng trứng gà thơm phức. Khi dọn ra, bột chiên được ăn kèm đu đủ bào chua ngọt, hành lá và chấm với xì dầu pha tương ớt. Vị giòn, dẻo, béo và chua ngọt kết hợp hài hòa, tạo nên sức hút khó cưỡng.', 
+  ingredients: 'Bột gạo, trứng gà, hành lá, đu đủ bào, xì dầu, giấm, đường, tương ớt, dầu ăn.' 
+},
+
+{ 
+  id: 11, 
+  name: 'Chè Ba Miền', 
+  category: 'snack', 
+  region: 'all', 
+  image: 'images/che.jpg', 
+  description: 'Chè là món ăn tráng miệng ngọt mát phổ biến ở khắp ba miền Việt Nam, với vô số biến thể phong phú. Từ chè đậu xanh, đậu đỏ, đậu đen đến chè thập cẩm với thạch, trân châu và nước cốt dừa béo ngậy, mỗi loại chè đều mang hương vị riêng. Vào những ngày hè oi ả, một cốc chè mát lạnh không chỉ giải nhiệt mà còn gợi cảm giác vui tươi, gần gũi. Đây là món ăn vặt dân dã nhưng luôn có sức hút đặc biệt.', 
+  ingredients: 'Đậu xanh, đậu đỏ, đậu đen, bột báng, hạt sen, thạch rau câu, nước cốt dừa, đường, đá bào.' 
+},
+
+{ 
+  id: 12, 
+  name: 'Bánh Tráng Nướng', 
+  category: 'snack', 
+  region: 'trung', 
+  image: 'images/banh-trang-nuong.jpg', 
+  description: 'Bánh Tráng Nướng, thường được gọi vui là “pizza Việt Nam”, là món ăn vặt cực kỳ phổ biến ở Đà Lạt và nhiều nơi khác. Lớp bánh tráng mỏng được nướng giòn trên than hồng, thêm trứng cút, hành lá, xúc xích, thịt băm, ruốc khô và sốt mayonnaise. Mỗi chiếc bánh vừa giòn, vừa béo, vừa mặn ngọt, khiến ai ăn thử một lần đều nhớ mãi.', 
+  ingredients: 'Bánh tráng, trứng cút, hành lá, xúc xích, thịt băm, ruốc khô, phô mai, sốt mayonnaise, tương ớt.' 
+},
+
 
     // Đặc sản
     { id: 13, name: 'Phở Cuốn', category: 'specialty', region: 'bac', image: 'images/pho-cuon.jpg', description: 'Phở cuốn Hà Nội có bánh phở mềm cuốn thịt bò xào thơm, rau sống, chấm nước mắm tỏi ớt đậm đà.', ingredients: 'Bánh phở, thịt bò, xà lách, rau thơm, nước mắm, tỏi, ớt.' },
@@ -30,14 +138,19 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 22, name: 'Hủ Tiếu', category: 'specialty', region: 'nam', image: 'images/hu-tieu.jpg', description: 'Hủ tiếu là món ăn đặc sản miền Nam có nguồn gốc Hoa, nước dùng ngọt thanh từ xương heo, sợi hủ tiếu dai mềm, ăn kèm thịt heo, tôm, gan và rau sống. Các biến thể nổi tiếng gồm hủ tiếu Nam Vang, Mỹ Tho, Sa Đéc.', ingredients: 'Sợi hủ tiếu, xương heo, thịt nạc, gan heo, tôm, trứng cút, giá đỗ, hẹ, xà lách, hành phi, nước mắm, muối, tiêu.' }
 ];
 
+    // DOM Elements
     const mainDishesContainer = document.getElementById('main-dishes');
     const snackDishesContainer = document.getElementById('snack-dishes');
     const specialtyDishesContainer = document.getElementById('specialty-dishes');
+    const favoriteDishesContainer = document.getElementById('favorite-dishes');
+    const favoritesSection = document.getElementById('favorites-section');
+    const mainSections = document.querySelectorAll('.category:not(#favorites-section)');
 
     const logoutBtn = document.getElementById('logout-btn');
     const userActions = document.getElementById('user-actions');
     const userInfo = document.getElementById('user-info');
     const welcomeMessage = document.getElementById('welcome-message');
+    const favoritesFilterBtn = document.getElementById('favorites-filter-btn');
 
     const dishDetailModal = document.getElementById('dish-detail-modal');
     const closeBtns = document.querySelectorAll('.close-btn');
@@ -46,55 +159,155 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const filterButtons = document.querySelectorAll('.filter-btn');
     
+    // State variables
     let currentUser = null;
     let currentDishId = null;
     let currentRating = 0;
+    let userFavorites = {}; // { username: [dishId1, dishId2], ... }
 
-    // --- CÁC HÀM XỬ LÝ GIAO DIỆN CHÍNH (KHÔNG THAY ĐỔI NHIỀU) ---
+    // --- FAVORITES FUNCTIONS ---
+    function loadUserFavorites() {
+        userFavorites = JSON.parse(localStorage.getItem('userFavorites')) || {};
+    }
+
+    function saveUserFavorites() {
+        localStorage.setItem('userFavorites', JSON.stringify(userFavorites));
+    }
+
+    function toggleFavorite(dishId) {
+        if (!currentUser) {
+            alert('Vui lòng đăng nhập để sử dụng tính năng này!');
+            return;
+        }
+        const dishIdNum = parseInt(dishId);
+        const currentUserFavs = userFavorites[currentUser] || [];
+        const favIndex = currentUserFavs.indexOf(dishIdNum);
+
+        if (favIndex > -1) {
+            // Remove from favorites
+            currentUserFavs.splice(favIndex, 1);
+        } else {
+            // Add to favorites
+            currentUserFavs.push(dishIdNum);
+        }
+        userFavorites[currentUser] = currentUserFavs;
+        saveUserFavorites();
+
+        // Re-render to update UI
+        const activeFilter = document.querySelector('.filter-btn.active').dataset.region;
+        renderDishes(activeFilter, searchInput.value);
+        // Also update icon inside modal if it's open
+        if (!dishDetailModal.classList.contains('hidden') && currentDishId === dishIdNum) {
+            const modalIcon = document.querySelector('#dish-detail-content .favorite-icon');
+            if (modalIcon) {
+                modalIcon.classList.toggle('active', favIndex === -1);
+                modalIcon.classList.toggle('fas', favIndex === -1);
+                modalIcon.classList.toggle('far', favIndex > -1);
+            }
+        }
+    }
+
+    // --- MAIN RENDER FUNCTION ---
     function renderDishes(regionFilter = 'all', searchTerm = '') {
+        // Clear all containers
         mainDishesContainer.innerHTML = '';
         snackDishesContainer.innerHTML = '';
         specialtyDishesContainer.innerHTML = '';
+        favoriteDishesContainer.innerHTML = '';
+
         const lowerCaseSearchTerm = searchTerm.toLowerCase().trim();
-        const filteredDishes = dishes.filter(dish => {
-            const regionMatch = (regionFilter === 'all' || dish.region === regionFilter || dish.region === 'all');
-            const searchMatch = dish.name.toLowerCase().includes(lowerCaseSearchTerm);
-            return regionMatch && searchMatch;
-        });
-        if (filteredDishes.length === 0) {
-            mainDishesContainer.innerHTML = '<p style="text-align: center; width: 100%; grid-column: 1 / -1;">Không tìm thấy món ăn phù hợp.</p>';
+        const currentUserFavs = (currentUser && userFavorites[currentUser]) ? userFavorites[currentUser] : [];
+
+        let dishesToDisplay;
+
+        if (regionFilter === 'favorites') {
+            favoritesSection.classList.remove('hidden');
+            mainSections.forEach(sec => sec.classList.add('hidden'));
+            dishesToDisplay = dishes.filter(dish => 
+                currentUserFavs.includes(dish.id) &&
+                dish.name.toLowerCase().includes(lowerCaseSearchTerm)
+            );
+        } else {
+            favoritesSection.classList.add('hidden');
+            mainSections.forEach(sec => sec.classList.remove('hidden'));
+            dishesToDisplay = dishes.filter(dish => {
+                const regionMatch = (regionFilter === 'all' || dish.region === regionFilter || dish.region === 'all');
+                const searchMatch = dish.name.toLowerCase().includes(lowerCaseSearchTerm);
+                return regionMatch && searchMatch;
+            });
         }
-        filteredDishes.forEach(dish => {
+        
+        if (dishesToDisplay.length === 0) {
+            const targetContainer = regionFilter === 'favorites' ? favoriteDishesContainer : mainDishesContainer;
+            targetContainer.innerHTML = '<p style="text-align: center; width: 100%; grid-column: 1 / -1;">Không tìm thấy món ăn phù hợp.</p>';
+        }
+
+        dishesToDisplay.forEach(dish => {
+            const isFavorite = currentUserFavs.includes(dish.id);
             const dishCard = `
                 <div class="dish-card" data-id="${dish.id}">
+                    ${currentUser ? `<i class="favorite-icon ${isFavorite ? 'fas active' : 'far'} fa-heart" data-id="${dish.id}"></i>` : ''}
                     <img src="${dish.image}" alt="${dish.name}">
                     <div class="dish-card-content">
                         <h4>${dish.name}</h4>
                         <p>${dish.description.substring(0, 100)}...</p>
                     </div>
                 </div>`;
-            if (dish.category === 'main') mainDishesContainer.innerHTML += dishCard;
-            else if (dish.category === 'snack') snackDishesContainer.innerHTML += dishCard;
-            else specialtyDishesContainer.innerHTML += dishCard;
+            
+            if (regionFilter === 'favorites') {
+                favoriteDishesContainer.innerHTML += dishCard;
+            } else {
+                if (dish.category === 'main') mainDishesContainer.innerHTML += dishCard;
+                else if (dish.category === 'snack') snackDishesContainer.innerHTML += dishCard;
+                else specialtyDishesContainer.innerHTML += dishCard;
+            }
         });
+
+        // Add event listeners after rendering
         document.querySelectorAll('.dish-card').forEach(card => {
-            card.addEventListener('click', () => showDishDetail(card.dataset.id));
+            card.addEventListener('click', (e) => {
+                // Prevent opening modal if favorite icon is clicked
+                if (!e.target.classList.contains('favorite-icon')) {
+                    showDishDetail(card.dataset.id);
+                }
+            });
+        });
+        document.querySelectorAll('.favorite-icon').forEach(icon => {
+            icon.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent card click event from firing
+                toggleFavorite(icon.dataset.id);
+            });
         });
     }
 
+    // --- OTHER UI FUNCTIONS ---
     function showDishDetail(dishId) {
         currentDishId = parseInt(dishId);
         const dish = dishes.find(d => d.id === currentDishId);
         if (!dish) return;
+
+        const currentUserFavs = (currentUser && userFavorites[currentUser]) ? userFavorites[currentUser] : [];
+        const isFavorite = currentUserFavs.includes(dish.id);
+
         const dishDetailContent = document.getElementById('dish-detail-content');
         dishDetailContent.innerHTML = `
             <img src="${dish.image}" alt="${dish.name}">
             <div class="dish-info">
-                <h2>${dish.name}</h2>
+                <h2>
+                    ${dish.name}
+                    ${currentUser ? `<i class="favorite-icon ${isFavorite ? 'fas active' : 'far'} fa-heart" data-id="${dish.id}"></i>` : ''}
+                </h2>
                 <p><strong>Nguyên liệu chính:</strong> ${dish.ingredients}</p>
                 <p>${dish.description}</p>
                 <div class="avg-rating" id="avg-rating-display"></div>
             </div>`;
+        
+        // Add event listener for the new icon in the modal
+        const modalFavIcon = dishDetailContent.querySelector('.favorite-icon');
+        if (modalFavIcon) {
+            modalFavIcon.addEventListener('click', () => toggleFavorite(modalFavIcon.dataset.id));
+        }
+        
         renderComments(currentDishId);
         updateCommentFormVisibility();
         dishDetailModal.style.display = 'block';
@@ -110,10 +323,15 @@ document.addEventListener('DOMContentLoaded', () => {
             userActions.classList.add('hidden');
             userInfo.classList.remove('hidden');
             welcomeMessage.textContent = `Chào, ${currentUser}!`;
+            favoritesFilterBtn.classList.remove('hidden');
         } else {
             userActions.classList.remove('hidden');
             userInfo.classList.add('hidden');
+            favoritesFilterBtn.classList.add('hidden');
         }
+        // Re-render dishes to show/hide favorite icons
+        const activeFilter = document.querySelector('.filter-btn.active').dataset.region;
+        renderDishes(activeFilter, searchInput.value);
     }
 
     function handleLogout() {
@@ -134,13 +352,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Các hàm xử lý bình luận và đánh giá giữ nguyên
-    function renderComments(dishId) { /* Giữ nguyên code cũ */ }
-    function handleCommentSubmit(e){ /* Giữ nguyên code cũ */ }
-    function handleStarRating(e) { /* Giữ nguyên code cũ */ }
-    function resetStars() { /* Giữ nguyên code cũ */ }
-    // (Bạn chỉ cần copy/paste lại các hàm này từ file script.js cũ của bạn)
-    // Hoặc để mình điền đầy đủ giúp bạn
     function renderComments(dishId) {
         const commentList = document.getElementById('comment-list');
         commentList.innerHTML = '';
@@ -201,7 +412,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentRating = 0;
     }
 
-
     // --- EVENT LISTENERS ---
     logoutBtn.addEventListener('click', handleLogout);
     commentForm.addEventListener('submit', handleCommentSubmit);
@@ -211,7 +421,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     document.getElementById('comment-form').querySelector('.star-rating').addEventListener('click', handleStarRating);
     
-    // ĐÃ THAY ĐỔI: Chuyển hướng đến trang đăng nhập
     document.getElementById('login-from-comment').addEventListener('click', (e) => {
         e.preventDefault();
         window.location.href = 'login.html';
@@ -231,6 +440,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- INITIALIZATION ---
-    renderDishes(); 
-    updateUserUI();
+    loadUserFavorites();
+    updateUserUI(); // This will call renderDishes() internally
 });

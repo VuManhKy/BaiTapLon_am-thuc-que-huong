@@ -415,3 +415,38 @@ footer {
         max-width: 100%;
     }
 }
+/* --- Styles for Favorite Icon --- */
+.favorite-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.8rem;
+    color: #ffffff; /* Màu trắng để nổi bật trên ảnh */
+    text-shadow: 0 0 5px rgba(0,0,0,0.7); /* Thêm shadow để dễ nhìn */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    z-index: 10;
+}
+
+.favorite-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Trạng thái đã yêu thích */
+.favorite-icon.active {
+    color: var(--secondary-color); /* Màu đỏ khi được yêu thích */
+}
+
+/* Icon trong modal chi tiết món ăn */
+.dish-info .favorite-icon {
+    position: static; /* Ghi đè position absolute */
+    font-size: 2rem;
+    color: #ccc; /* Màu xám khi chưa thích */
+    text-shadow: none; /* Bỏ shadow */
+    margin-left: 15px;
+    vertical-align: middle; /* Căn giữa với tiêu đề */
+}
+
+.dish-info .favorite-icon.active {
+    color: var(--secondary-color);
+}
