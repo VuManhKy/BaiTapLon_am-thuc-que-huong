@@ -1,0 +1,422 @@
+/* --- General Styles --- */
+:root {
+    --primary-color: #c0392b;
+    --secondary-color: #e74c3c;
+    --background-color: #fdf6e3;
+    --text-color: #333;
+    --light-text-color: #fff;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--background-color);
+}
+
+#user-actions button, #user-info button {
+    padding: 8px 16px;
+    border: 1px solid var(--light-text-color);
+    background: transparent;
+    color: var(--light-text-color);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#user-actions button:hover, #user-info button:hover {
+    background-color: var(--light-text-color);
+    color: var(--primary-color);
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+}
+
+#welcome-message {
+    margin-right: 15px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?vietnamese-food') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--light-text-color);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* --- Main Content & Dishes --- */
+main {
+    padding: 40px 20px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.category {
+    margin-bottom: 50px;
+}
+
+.category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.dish-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent; /* THÊM DÒNG NÀY */
+    /* CẬP NHẬT DÒNG NÀY ĐỂ THÊM border-color */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+
+.dish-card:hover {
+      transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-color: var(--primary-color); 
+}
+.dish-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dish-card-content {
+    padding: 20px;
+}
+
+.dish-card-content h4 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.dish-card-content p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* --- Modals --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    animation: fadeIn 0.5s;
+}
+
+.modal-content-large {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+    animation: fadeIn 0.5s;
+}
+
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal input, .modal textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.modal button {
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.modal button:hover {
+    background-color: var(--secondary-color);
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+/* --- Dish Detail Modal Content --- */
+#dish-detail-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+#dish-detail-content img {
+    max-width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.dish-info h2 {
+    color: var(--primary-color);
+    text-align: left;
+    margin-bottom: 15px;
+}
+.dish-info p {
+    margin-bottom: 10px;
+}
+.dish-info .avg-rating {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* --- Comment Section --- */
+.comment-section {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+.comment {
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+}
+.comment-author {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.comment-rating .fa-star { color: #f39c12; }
+.comment p { margin-top: 5px; }
+
+#comment-login-prompt a {
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* --- Star Rating --- */
+.star-rating { margin-bottom: 15px; }
+.star-rating i {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.star-rating i:hover, .star-rating i.selected {
+    color: #f39c12; /* Gold color for stars */
+}
+
+
+/* --- Utility Classes --- */
+.hidden {
+    display: none !important;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header nav {
+        margin-top: 10px;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    #dish-detail-content {
+        flex-direction: column;
+    }
+    #dish-detail-content img {
+        max-width: 100%;
+    }
+}
+
+.filter-controls {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+#search-input:focus {
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.2);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    color: var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    border-color: var(--secondary-color);
+     transform: translateY(-5px) scale(1.05);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border-color: var(--primary-color);
+}
