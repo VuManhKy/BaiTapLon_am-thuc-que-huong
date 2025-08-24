@@ -1,4 +1,4 @@
-/* --- General Styles --- */
+
 :root {
   --primary-color: #c0392b;
   --secondary-color: #e74c3c;
@@ -27,7 +27,7 @@ body {
   padding: 0 20px;
 }
 
-/* --- Header --- */
+/* Header  */
 header {
   background-color: var(--primary-color);
   color: var(--light-text-color);
@@ -89,7 +89,7 @@ header nav a:hover {
   color: var(--primary-color);
 }
 
-/* CHUYỂN VỀ ĐÚNG CHỖ: Style cho các nút <a> trong header trang chủ */
+/* Style cho các nút <a> trong header trang chủ */
 .nav-button {
   padding: 8px 16px;
   border: 1px solid var(--light-text-color);
@@ -115,7 +115,7 @@ header nav a:hover {
   margin-right: 15px;
 }
 
-/* --- Hero Section --- */
+/*  Hero Section  */
 .hero {
   height: 70vh;
   display: flex;
@@ -125,8 +125,8 @@ header nav a:hover {
   text-align: center;
 
   /* gradient động */
-  background: linear-gradient(-45deg, #f38a8d, #f5bfb1, #f79ddd, #f7db82);
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg,#f38a8e87, #f5bfb183, #f79dde54, #f7dc827b); 
+   background-size: 400% 400%;
   animation: gradientMove 12s ease infinite;
   position: relative;
 }
@@ -135,7 +135,7 @@ header nav a:hover {
   font-size: 4rem;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  z-index: 2; /* nằm trên overlay */
+  z-index: 2; 
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
 }
 @keyframes gradientMove {
@@ -151,7 +151,7 @@ header nav a:hover {
 }
 .hero-content {
   z-index: 2;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .hero-content p {
@@ -166,7 +166,8 @@ header nav a:hover {
   position: absolute;
   inset: 0;
   background: url("../images/amthuc.jpg") repeat;
-  opacity: 0.5;
+  background-color: #666;
+  opacity: 20%;
   animation: movePattern 40s linear infinite;
 }
 

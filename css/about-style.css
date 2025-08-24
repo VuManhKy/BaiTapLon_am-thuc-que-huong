@@ -11,7 +11,7 @@ main {
 /* Container chính của trang giới thiệu */
 #about-page {
     background-color: #ffffff;
-    padding: 40px 50px; /* Tăng padding để nội dung thoáng hơn */
+    padding: 40px 50px; 
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.05);
 }
@@ -61,7 +61,6 @@ main {
     margin-bottom: 10px;
 }
 
-/* Tạo dấu check '✔' tùy chỉnh cho các mục trong danh sách */
 #about-page ul li::before {
     content: '✔';
     color: var(--primary-color);
@@ -83,5 +82,135 @@ main {
 
     #about-page h3 {
         font-size: 1.5rem;
+    }
+}
+
+#contact-section {
+    margin-top: 40px;
+    padding: 40px 50px;
+    background-color: #f9f9f9; 
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+#contact-section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: none; 
+}
+
+#contact-section p {
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left; 
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-basis: 300px; 
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-details h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-details p {
+    margin-bottom: 0;
+    text-align: left;
+    color: #555;
+}
+
+.contact-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 30px;
+}
+
+.social-links h4 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #contact-section {
+        padding: 30px 25px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-details p {
+        text-align: center;
     }
 }

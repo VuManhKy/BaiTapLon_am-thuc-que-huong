@@ -1,7 +1,6 @@
-/* --- Styles for Login/Register Page (Đã nâng cấp) --- */
 
 .login-page-bg {
-    /* THAY ĐỔI: Dùng gradient để nền trông cao cấp hơn */
+    /* Dùng gradient để nền  */
     background: linear-gradient(135deg, #c0392b, #8e44ad);
     display: flex;
     justify-content: center;
@@ -11,7 +10,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* THÊM MỚI: Animation cho form hiện lên mượt mà */
+/*  Animation cho form hiện lên mượt mà */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -31,13 +30,13 @@
     width: 100%;
     max-width: 420px;
     border: 1px solid #eee;
-    animation: fadeInUp 0.6s ease-out; /* Áp dụng animation */
+    animation: fadeInUp 0.6s ease-out; 
 }
 
 .form-box .logo-link {
     display: block;
     text-align: center;
-    font-size: 2rem; /* Tăng kích thước logo */
+    font-size: 2rem; 
     font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
@@ -51,7 +50,6 @@
     font-weight: 600;
 }
 
-/* THAY ĐỔI: Làm đẹp các ô input */
 .form-box input[type="text"],
 .form-box input[type="password"] {
     width: 100%;
@@ -64,7 +62,6 @@
     transition: all 0.3s ease;
 }
 
-/* THAY ĐỔI: Thêm hiệu ứng "glow" khi focus vào input */
 .form-box input:focus {
     outline: none;
     border-color: var(--primary-color);
@@ -72,7 +69,6 @@
     box-shadow: 0 0 0 4px rgba(192, 57, 43, 0.1);
 }
 
-/* THAY ĐỔI: Nâng cấp nút bấm */
 .form-box button {
     width: 100%;
     padding: 14px;
@@ -88,7 +84,6 @@
     box-shadow: 0 4px 15px rgba(192, 57, 43, 0.3);
 }
 
-/* THAY ĐỔI: Thêm hiệu ứng cho nút khi di chuột vào */
 .form-box button:hover {
     background-color: var(--secondary-color);
     transform: translateY(-3px);
@@ -113,7 +108,7 @@
     color: var(--secondary-color);
 }
 
-/* THAY ĐỔI: Làm đẹp các thông báo lỗi và thành công */
+
 .error-message, .success-message {
     padding: 10px;
     margin-top: 15px;
@@ -122,7 +117,6 @@
     font-weight: 500;
 }
 
-/* Chỉ hiện style khi có nội dung */
 .error-message:not(:empty) {
     background-color: #fee2e2;
     color: #b91c1c;
