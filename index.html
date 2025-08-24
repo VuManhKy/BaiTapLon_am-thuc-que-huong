@@ -1,102 +1,184 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ẩm Thực Quê Hương - Tinh Hoa Ẩm Thực Việt</title>
-    <link rel="stylesheet" href="css/login-style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/login-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <a href="#" class="logo">Ẩm Thực Quê Hương</a>
-            <nav>
-                <ul>
-                    <li><a href="#home">Trang Chủ</a></li>
-                    <li><a href="#dishes">Món Ăn</a></li>
-                    <li><a href="#about">Giới Thiệu</a></li>
-                </ul>
-            </nav>
-            <div id="user-actions">
-                <a href="login.html" class="nav-button">Đăng Nhập</a>
-                <a href="login.html#register" class="nav-button">Đăng Ký</a>
-            </div>
-            <div id="user-info" class="hidden">
-                <span id="welcome-message"></span>
-                <button id="logout-btn">Đăng Xuất</button>
-            </div>
+      <div class="container">
+        <a href="#" class="logo">Ẩm Thực Quê Hương</a>
+        <nav>
+          <ul>
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#dishes">Món Ăn</a></li>
+            <li><a href="#about">Giới Thiệu</a></li>
+          </ul>
+        </nav>
+        <div id="user-actions">
+          <a href="login.html" class="nav-button">Đăng Nhập</a>
+          <a href="login.html#register" class="nav-button">Đăng Ký</a>
         </div>
+        <div id="user-info" class="hidden">
+          <span id="welcome-message"></span>
+          <button id="logout-btn">Đăng Xuất</button>
+        </div>
+      </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Khám Phá Hương Vị Việt</h1>
-            <p>Nơi hội tụ tinh hoa ẩm thực ba miền Bắc - Trung - Nam</p>
-        </div>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Bản Sắc Ẩm Thực Tại Việt Nam</h1>
+        <p>Thưởng thức hương vị ẩm thực tuyệt vời</p>
+      </div>
     </section>
 
+    <!-- danh sách các món ăn nổi bật chuyển động -->
+    <h2 align="center">Các món ăn nổi bật</h2>
+    <div class="carousel">
+      <div class="group">
+        <div class="card" data-id="18">
+          <img src="./images/banh-beo.jpg" alt="" height="150px" />
+          <div class="card-title">Bánh Bèo</div>
+        </div>
+        <div class="card" data-id="15">
+          <img src="./images/banh-can.jpg" alt="" height="150px" />
+          <div class="card-title">Bánh Căn</div>
+        </div>
+        <div class="card" data-id="12">
+          <img src="./images/banh-trang-nuong.jpg" alt="" height="150px" />
+          <div class="card-title">Bánh Tráng Nướng</div>
+        </div>
+        <div class="card" data-id="6">
+          <img src="./images/cao-lau.jpg" alt="" height="150px" />
+          <div class="card-title">Cao Lầu</div>
+        </div>
+        <div class="card" data-id="9">
+          <img src="./images/goi-cuon.jpg" alt="" height="150px" />
+          <div class="card-title">Gỏi Cuốn</div>
+        </div>
+        <div class="card" data-id="17">
+          <img src="./images/cha-ca.jpg" alt="" height="150px" />
+          <div class="card-title">Chả Cá</div>
+        </div>
+      </div>
+
+      <div aria-hidden class="group">
+        <div class="card" data-id="18">
+          <img src="./images/banh-beo.jpg" alt="" height="150px" />
+          <div class="card-title">Bánh Bèo</div>
+        </div>
+        <div class="card" data-id="15">
+          <img src="./images/banh-can.jpg" alt="" height="150px" />
+          <div class="card-title">Bánh Căn</div>
+        </div>
+        <div class="card" data-id="12">
+          <img src="./images/banh-trang-nuong.jpg" alt="" height="150px" />
+          <div class="card-title">Bánh Tráng Nướng</div>
+        </div>
+        <div class="card" data-id="6">
+          <img src="./images/cao-lau.jpg" alt="" height="150px" />
+          <div class="card-title">Cao Lầu</div>
+        </div>
+        <div class="card" data-id="9">
+          <img src="./images/goi-cuon.jpg" alt="" height="150px" />
+          <div class="card-title">Gỏi Cuốn</div>
+        </div>
+        <div class="card" data-id="17">
+          <img src="./images/cha-ca.jpg" alt="" height="150px" />
+          <div class="card-title">Chả Cá</div>
+        </div>
+      </div>
+    </div>
+
     <main id="dishes" class="container">
-        <h2>Danh Sách Món Ăn</h2>
-        <div class="filter-controls">
-            <input type="text" id="search-input" placeholder="🔍 Tìm kiếm món ăn...">
-            <div class="filter-buttons" id="filter-buttons">
-                <button class="filter-btn active" data-region="all">Tất Cả</button>
-                <button class="filter-btn" data-region="bac">Miền Bắc</button>
-                <button class="filter-btn" data-region="trung">Miền Trung</button>
-                <button class="filter-btn" data-region="nam">Miền Nam</button>
-                <!-- ĐÃ THÊM: Nút filter Yêu thích, ban đầu sẽ bị ẩn -->
-                <button class="filter-btn hidden" data-region="favorites" id="favorites-filter-btn"><i class="fas fa-heart"></i> Yêu Thích</button>
-            </div>
+      <h2>Danh Sách Món Ăn</h2>
+      <div class="filter-controls">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="🔍 Tìm kiếm món ăn..."
+        />
+        <div class="filter-buttons" id="filter-buttons">
+          <button class="filter-btn active" data-region="all">Tất Cả</button>
+          <button class="filter-btn" data-region="bac">Miền Bắc</button>
+          <button class="filter-btn" data-region="trung">Miền Trung</button>
+          <button class="filter-btn" data-region="nam">Miền Nam</button>
+          <!-- ĐÃ THÊM: Nút filter Yêu thích, ban đầu sẽ bị ẩn -->
+          <button
+            class="filter-btn hidden"
+            data-region="favorites"
+            id="favorites-filter-btn"
+          >
+            <i class="fas fa-heart"></i> Yêu Thích
+          </button>
         </div>
+      </div>
 
-        <!-- ĐÃ THÊM: Khu vực dành riêng cho các món ăn yêu thích -->
-        <div id="favorites-section" class="category hidden">
-            <h3><i class="fas fa-heart"></i> Món Ăn Yêu Thích</h3>
-            <div class="dish-grid" id="favorite-dishes"></div>
-        </div>
+      <!-- ĐÃ THÊM: Khu vực dành riêng cho các món ăn yêu thích -->
+      <div id="favorites-section" class="category hidden">
+        <h3><i class="fas fa-heart"></i> Món Ăn Yêu Thích</h3>
+        <div class="dish-grid" id="favorite-dishes"></div>
+      </div>
 
-        <div class="category" id="main-dishes-section">
-            <h3><i class="fas fa-utensils"></i> Món Chính Truyền Thống</h3>
-            <div class="dish-grid" id="main-dishes"></div>
-        </div>
-        <div class="category" id="snack-dishes-section">
-            <h3><i class="fas fa-cookie-bite"></i> Món Ăn Vặt & Đường Phố</h3>
-            <div class="dish-grid" id="snack-dishes"></div>
-        </div>
-        <div class="category" id="specialty-dishes-section">
-            <h3><i class="fas fa-gifts"></i> Đặc Sản Vùng Miền</h3>
-            <div class="dish-grid" id="specialty-dishes"></div>
-        </div>
+      <div class="category" id="main-dishes-section">
+        <h3><i class="fas fa-utensils"></i> Món Chính Truyền Thống</h3>
+        <div class="dish-grid" id="main-dishes"></div>
+      </div>
+      <div class="category" id="snack-dishes-section">
+        <h3><i class="fas fa-cookie-bite"></i> Món Ăn Vặt & Đường Phố</h3>
+        <div class="dish-grid" id="snack-dishes"></div>
+      </div>
+      <div class="category" id="specialty-dishes-section">
+        <h3><i class="fas fa-gifts"></i> Đặc Sản Vùng Miền</h3>
+        <div class="dish-grid" id="specialty-dishes"></div>
+      </div>
     </main>
-    
+
     <footer>
-        <p>&copy; người đâu thưởng rau má</p>
+      <p>&copy; người đâu thưởng rau má</p>
     </footer>
 
     <!-- Dish Detail Modal -->
     <div id="dish-detail-modal" class="modal">
-        <div class="modal-content-large">
-            <span class="close-btn">&times;</span>
-            <div id="dish-detail-content"></div>
-            <div class="comment-section">
-                <h3>Bình luận và Đánh giá</h3>
-                <div id="comment-list"></div>
-                <div id="comment-form-container">
-                    <p id="comment-login-prompt" class="hidden">Vui lòng <a href="#" id="login-from-comment">đăng nhập</a> để bình luận.</p>
-                    <form id="comment-form" class="hidden">
-                        <div class="star-rating">
-                            <i class="far fa-star" data-value="1"></i><i class="far fa-star" data-value="2"></i><i class="far fa-star" data-value="3"></i><i class="far fa-star" data-value="4"></i><i class="far fa-star" data-value="5"></i>
-                        </div>
-                        <textarea id="comment-text" placeholder="Viết bình luận của bạn..." required></textarea>
-                        <button type="submit">Gửi Bình Luận</button>
-                    </form>
-                </div>
-            </div>
+      <div class="modal-content-large">
+        <span class="close-btn">&times;</span>
+        <div id="dish-detail-content"></div>
+        <div class="comment-section">
+          <h3>Bình luận và Đánh giá</h3>
+          <div id="comment-list"></div>
+          <div id="comment-form-container">
+            <p id="comment-login-prompt" class="hidden">
+              Vui lòng <a href="#" id="login-from-comment">đăng nhập</a> để bình
+              luận.
+            </p>
+            <form id="comment-form" class="hidden">
+              <div class="star-rating">
+                <i class="far fa-star" data-value="1"></i
+                ><i class="far fa-star" data-value="2"></i
+                ><i class="far fa-star" data-value="3"></i
+                ><i class="far fa-star" data-value="4"></i
+                ><i class="far fa-star" data-value="5"></i>
+              </div>
+              <textarea
+                id="comment-text"
+                placeholder="Viết bình luận của bạn..."
+                required
+              ></textarea>
+              <button type="submit">Gửi Bình Luận</button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
