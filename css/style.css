@@ -166,7 +166,7 @@ header nav a:hover {
   position: absolute;
   inset: 0;
   background: url("../images/amthuc.jpg") repeat;
-  opacity: 0.65;
+  opacity: 0.5;
   animation: movePattern 40s linear infinite;
 }
 
@@ -635,7 +635,7 @@ h2 {
 }
 
 footer {
-  background-color: #50a9c4;
+  background-color: #bf9961f3;
   display: flex;
   justify-content: center;
   align-items: center;

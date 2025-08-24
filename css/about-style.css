@@ -1,0 +1,87 @@
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Container chính của trang giới thiệu */
+#about-page {
+    background-color: #ffffff;
+    padding: 40px 50px; /* Tăng padding để nội dung thoáng hơn */
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+#about-page h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#about-page .about-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.7;
+}
+
+#about-page h3 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+#about-page p, 
+#about-page li {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+#about-page ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#about-page ul li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Tạo dấu check '✔' tùy chỉnh cho các mục trong danh sách */
+#about-page ul li::before {
+    content: '✔';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    #about-page {
+        padding: 30px 25px;
+    }
+
+    #about-page h2 {
+        font-size: 2.2rem;
+    }
+
+    #about-page h3 {
+        font-size: 1.5rem;
+    }
+}

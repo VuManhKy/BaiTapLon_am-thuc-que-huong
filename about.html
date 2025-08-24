@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu - Ẩm Thực Quê Hương</title>
+    
+    <!-- Link đến CSS chung của toàn trang web (cho header, footer...) -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Link đến CSS riêng của trang Giới thiệu -->
+    <link rel="stylesheet" href="css/about-style.css">
+    
+    <!-- Link Font Awesome (cần cho icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- SỬ DỤNG LẠI HEADER TỪ TRANG CHỦ ĐỂ ĐỒNG BỘ GIAO DIỆN -->
+    <header>
+        <div class="container">
+            <!-- Sửa link logo để luôn trỏ về trang chủ -->
+            <a href="index.html" class="logo">Ẩm Thực Quê Hương</a>
+            <nav>
+                <ul>
+                    <!-- Sửa link Trang chủ để trỏ về index.html -->
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="index.html#dishes">Món Ăn</a></li>
+                    <!-- Đánh dấu trang hiện tại là "Giới Thiệu" (có thể thêm class active sau này nếu cần) -->
+                    <li><a href="about.html">Giới Thiệu</a></li>
+                </ul>
+            </nav>
+            <div id="user-actions">
+                <a href="login.html" class="nav-button">Đăng Nhập</a>
+                <a href="login.html#register" class="nav-button">Đăng Ký</a>
+            </div>
+            <div id="user-info" class="hidden">
+                <span id="welcome-message"></span>
+                <button id="logout-btn">Đăng Xuất</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- NỘI DUNG CHÍNH CỦA TRANG GIỚI THIỆU -->
+        <div id="about-page" class="container">
+            <h2>Giới Thiệu Về Ẩm Thực Quê Hương</h2>
+            <p class="about-intro">
+                "Nơi mỗi món ăn là một câu chuyện, mỗi hương vị là một ký ức."
+            </p>
+        
+            <p>
+                Chào mừng bạn đến với <strong>Ẩm Thực Quê Hương</strong>, không gian số dành cho những tâm hồn yêu mến và trân trọng giá trị văn hóa ẩm thực Việt Nam. Chúng tôi tin rằng, ẩm thực không chỉ đơn thuần là những món ăn ngon, mà còn là di sản, là sợi dây vô hình kết nối quá khứ với hiện tại, và là niềm tự hào của mỗi người con đất Việt.
+            </p>
+            <p>
+                Website được xây dựng từ niềm đam mê cháy bỏng với những hương vị đậm đà bản sắc, từ tô phở nghi ngút khói của Hà Nội, mẹt bún đậu mắm tôm dân dã, cho đến chén bánh bèo mộc mạc của xứ Huế hay nồi lẩu mắm nồng nàn của miền Tây sông nước. 
+            </p>
+        
+            <h3>Sứ Mệnh Của Chúng Tôi</h3>
+            <p>
+                Sứ mệnh của <strong>Ẩm Thực Quê Hương</strong> là trở thành một cuốn cẩm nang toàn diện, một bảo tàng số lưu giữ và lan tỏa tinh hoa ẩm thực ba miền Bắc - Trung - Nam. Chúng tôi mong muốn:
+            </p>
+            <ul>
+                <li><strong>Bảo tồn giá trị:</strong> Ghi chép lại những công thức truyền thống, những câu chuyện lịch sử đằng sau mỗi món ăn, góp phần gìn giữ di sản ẩm thực của dân tộc.</li>
+                <li><strong>Lan tỏa đam mê:</strong> Khơi nguồn cảm hứng nấu nướng và khám phá ẩm thực cho mọi người, dù bạn là một đầu bếp chuyên nghiệp hay chỉ mới bắt đầu vào bếp.</li>
+                <li><strong>Kết nối cộng đồng:</strong> Xây dựng một cộng đồng vững mạnh, nơi mọi người có thể cùng nhau chia sẻ kinh nghiệm, đánh giá, và những kỷ niệm đẹp bên mâm cơm Việt.</li>
+            </ul>
+        
+            <h3>Điều Gì Làm Nên Sự Khác Biệt?</h3>
+            <ul>
+                <li><strong>Nội dung chọn lọc:</strong> Mỗi món ăn được giới thiệu đều được nghiên cứu kỹ lưỡng về nguồn gốc, công thức và biến tấu, đảm bảo thông tin chính xác và hữu ích.</li>
+                <li><strong>Hành trình trực quan:</strong> Hình ảnh chất lượng cao và mô tả chi tiết giúp bạn có một hành trình khám phá vị giác sống động và chân thực nhất.</li>
+                <li><strong>Trải nghiệm tương tác:</strong> Với các tính năng tìm kiếm, lọc món ăn theo vùng miền, bình luận, đánh giá và lưu món ăn yêu thích, chúng tôi mang đến một trải nghiệm cá nhân hóa và tiện lợi.</li>
+            </ul>
+        
+            <p>
+                Hãy cùng <strong>Ẩm Thực Quê Hương</strong> bắt đầu hành trình khám phá những hương vị diệu kỳ của Việt Nam. Dù bạn đang tìm kiếm một công thức cho bữa cơm gia đình, hay đơn giản là muốn tìm hiểu thêm về văn hóa đất nước, chúng tôi luôn sẵn lòng đồng hành cùng bạn.
+            </p>
+            <p>
+                <strong>Trân trọng,</strong><br>
+                Đội ngũ Ẩm Thực Quê Hương.
+            </p>
+        </div>
+    </main>
+
+    <!-- SỬ DỤNG LẠI FOOTER TỪ TRANG CHỦ -->
+    <footer>
+        <p>&copy; người đâu thưởng rau má</p>
+    </footer>
+
+    <!-- Script này cần thiết để xử lý logic Đăng nhập/Đăng xuất ở header -->
+    <script src="js/script.js"></script>
+</body>
+</html>
