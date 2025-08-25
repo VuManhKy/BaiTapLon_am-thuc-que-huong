@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Khám phá tinh hoa ẩm thực ba miền Bắc, Trung, Nam của Việt Nam. Tìm hiểu công thức và câu chuyện đằng sau mỗi món ăn quê hương.">
+    <meta name="keywords" content="ẩm thực, món ăn việt nam, công thức nấu ăn, phở, bún chả, bánh mì">
+    <title>Hành Trình Món Việt - Ẩm Thực Quê Hương</title>
+  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/about-style.css">
+<!-- Thêm dòng này -->
+<link rel="stylesheet" href="css/history-style.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- SỬ DỤNG LẠI HEADER TỪ TRANG CHỦ ĐỂ ĐỒNG BỘ GIAO DIỆN -->
+    <header>
+        <div class="container">
+            <!--link logo để luôn trỏ về trang chủ -->
+            <a href="index.html" class="logo">Ẩm Thực Quê Hương</a>
+            <nav>
+                <ul>
+                    <!--link Trang chủ để trỏ về index.html -->
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="index.html#dishes">Món Ăn</a></li>
+                      <li><a href="tieu-su-am-thuc.html">Hành Trình Món Việt</a></li>
+                       <li><a href="lich-su-hoat-dong.html">Lịch Sử Của Bạn</a></li>
+                    <li><a href="about.html">Giới Thiệu</a></li>
+                     <li><a href="lien-he.html">Liên Hệ</a></li> 
+                </ul>
+            </nav>
+            <div id="user-actions">
+                <a href="login.html" class="nav-button">Đăng Nhập</a>
+                <a href="login.html#register" class="nav-button">Đăng Ký</a>
+            </div>
+            <div id="user-info" class="hidden">
+                <span id="welcome-message"></span>
+                <button id="logout-btn">Đăng Xuất</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <div class="history-container container">
+        <div class="history-header">
+            <h2>Hành Trình Vươn Ra Thế Giới Của Ẩm Thực Việt</h2>
+            <p>Từ những món ăn dân dã, bình dị, ẩm thực Việt Nam đã có một hành trình đầy tự hào để chinh phục khẩu vị của thực khách năm châu và được vinh danh trên bản đồ ẩm thực toàn cầu.</p>
+        </div>
+
+        <div class="timeline">
+            <!-- Món 1: Phở -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>1. Phở</h3>
+                    <p><strong>Nguồn gốc:</strong> Xuất hiện đầu thế kỷ 20 tại Nam Định – Hà Nội.</p>
+                    <p><strong>Phổ biến:</strong> Sau 1954, phở lan rộng khắp miền Nam và theo cộng đồng người Việt ra nước ngoài.</p>
+                    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> CNN, BBC, UNESCO đều ca ngợi; năm 2023, phở lọt Top 50 món ăn ngon nhất thế giới (CNN Travel).</p>
+                </div>
+            </div>
+
+            <!-- Món 2: Bánh mì -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-bread-slice"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>2. Bánh mì</h3>
+                    <p><strong>Nguồn gốc:</strong> Bắt nguồn từ baguette Pháp, nhưng người Việt biến tấu thành ổ bánh nhỏ, giòn ruột mềm.</p>
+                    <p><strong>Phổ biến:</strong> Thế kỷ 20, lan rộng nhờ tính tiện lợi, giá rẻ.</p>
+                    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Năm 2011, từ “bánh mì” được Oxford đưa vào từ điển; năm 2020, CNN xếp bánh mì vào Top 10 món sandwich ngon nhất thế giới.</p>
+                </div>
+            </div>
+            
+            <!-- Món 3: Gỏi cuốn -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>3. Gỏi cuốn (Spring rolls)</h3>
+                    <p><strong>Nguồn gốc:</strong> Miền Nam Việt Nam, xuất hiện từ hàng trăm năm trước.</p>
+                    <p><strong>Phổ biến:</strong> Người Việt hải ngoại đưa vào thực đơn nhà hàng Á tại Mỹ, châu Âu.</p>
+                    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Được CNN, Lonely Planet khen ngợi là món ăn lành mạnh, nằm trong Top 50 món ngon nhất thế giới.</p>
+                </div>
+            </div>
+
+            <!-- Món 4: Bún chả -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>4. Bún chả Hà Nội</h3>
+                    <p><strong>Nguồn gốc:</strong> Có từ thế kỷ 19 tại Hà Nội.</p>
+                    <p><strong>Phổ biến:</strong> Sau sự kiện Tổng thống Obama ăn bún chả năm 2016, món này lan truyền khắp thế giới.</p>
+                    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Được BBC, Reuters gọi là “biểu tượng ẩm thực đường phố Việt Nam”.</p>
+                </div>
+            </div>
+            
+            <!-- Bạn có thể copy-paste và thay đổi nội dung cho các món còn lại theo cấu trúc trên -->
+            <!-- Ví dụ cho Món 5: Cao lầu -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>5. Cao lầu Hội An</h3>
+                    <p><strong>Nguồn gốc:</strong> Thế kỷ 17, chịu ảnh hưởng Trung Hoa – Nhật Bản khi Hội An là thương cảng lớn.</p>
+                    <p><strong>Phổ biến:</strong> Khách du lịch quốc tế ghé Hội An đã đưa món ăn này ra thế giới.</p>
+                    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Được UNESCO công nhận như một phần di sản ẩm thực gắn liền phố cổ Hội An.</p>
+                </div>
+            </div>
+            
+             <!-- Thêm các món còn lại vào đây... -->
+            <!-- Món 6: Bánh cuốn -->
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-cookie-bite"></i></div>
+                <div class="timeline-content">
+                    <h3>6. Bánh cuốn</h3>
+                    <p><strong>Nguồn gốc:</strong> Miền Bắc Việt Nam, gắn bó với chợ quê từ lâu đời.</p>
+                    <p><strong>Phổ biến:</strong> Các quán ăn Việt tại Mỹ, Pháp, Úc đưa vào thực đơn.</p>
+                    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Được CNN Travel bình chọn vào danh sách món ăn sáng ngon nhất thế giới.</p>
+                </div>
+            </div>
+            <!-- Món 7: Chả giò -->
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-drumstick-bite"></i></div>
+                <div class="timeline-content">
+                    <h3>7. Chả giò (Nem rán)</h3>
+                    <p><strong>Nguồn gốc:</strong> Miền Bắc Việt Nam, xuất hiện trong mâm cỗ truyền thống.</p>
+                    <p><strong>Phổ biến:</strong> Người Việt mang theo khi định cư nước ngoài, dần thành món Á phổ biến.</p>
+                    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Nhiều nhà hàng Michelin giới thiệu nem rán như một phần “Vietnamese signature dish”.</p>
+                </div>
+            </div>
+            <!-- Món 8: Hủ tiếu Nam Vang -->
+<div class="timeline-item">
+  <div class="timeline-icon">
+    <i class="fas fa-utensil-spoon"></i>
+  </div>
+  <div class="timeline-content">
+    <h3>8. Hủ tiếu Nam Vang</h3>
+    <p><strong>Nguồn gốc:</strong> Gốc Campuchia, Việt hóa ở miền Nam từ thế kỷ 20.</p>
+    <p><strong>Phổ biến:</strong> Lan mạnh tại Sài Gòn, rồi ra cộng đồng Việt ở Mỹ–Úc.</p>
+    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Thường lọt bảng xếp hạng món mì châu Á được yêu thích.</p>
+  </div>
+</div>
+
+<!-- Món 9: Cơm tấm Sài Gòn -->
+<div class="timeline-item">
+  <div class="timeline-icon">
+    <i class="fas fa-drumstick-bite"></i>
+  </div>
+  <div class="timeline-content">
+    <h3>9. Cơm tấm Sài Gòn</h3>
+    <p><strong>Nguồn gốc:</strong> Món của nông dân miền Nam từ gạo tấm (hạt vỡ).</p>
+    <p><strong>Phổ biến:</strong> Thành “đặc sản Sài Gòn”, theo người Việt ra thế giới.</p>
+    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Nhiều tạp chí du lịch quốc tế khen là street food hấp dẫn.</p>
+  </div>
+</div>
+
+<!-- Món 10: Mì Quảng -->
+<div class="timeline-item">
+  <div class="timeline-icon">
+    <i class="fas fa-seedling"></i>
+  </div>
+  <div class="timeline-content">
+    <h3>10. Mì Quảng</h3>
+    <p><strong>Nguồn gốc:</strong> Quảng Nam, hàng trăm năm.</p>
+    <p><strong>Phổ biến:</strong> Nổi tiếng qua du lịch miền Trung và cộng đồng Việt ở nước ngoài.</p>
+    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Thường được vinh danh trong lễ hội/tuần lễ ẩm thực quốc tế.</p>
+  </div>
+</div>
+
+<!-- Món 11: Bún bò Huế -->
+<div class="timeline-item">
+  <div class="timeline-icon">
+    <i class="fas fa-hotdog"></i>
+  </div>
+  <div class="timeline-content">
+    <h3>11. Bún bò Huế</h3>
+    <p><strong>Nguồn gốc:</strong> Gắn với ẩm thực cung đình triều Nguyễn (từ thế kỷ 16–19).</p>
+    <p><strong>Phổ biến:</strong> Phát triển mạnh trong và ngoài nước nhờ hương vị đậm đà.</p>
+    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Thường được truyền thông quốc tế xếp trong các món súp ngon.</p>
+  </div>
+</div>
+
+<!-- Món 12: Bánh xèo -->
+<div class="timeline-item">
+  <div class="timeline-icon">
+    <i class="fas fa-egg"></i>
+  </div>
+  <div class="timeline-content">
+    <h3>12. Bánh xèo</h3>
+    <p><strong>Nguồn gốc:</strong> Phổ biến từ thời Nguyễn, dọc miền Trung–Nam.</p>
+    <p><strong>Phổ biến:</strong> Gây ấn tượng ở các lễ hội ẩm thực quốc tế nhờ cách cuốn rau sống.</p>
+    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Nằm trong danh sách món đường phố châu Á được yêu thích.</p>
+  </div>
+</div>
+
+<!-- Món 13: Chè (các loại) -->
+<div class="timeline-item">
+  <div class="timeline-icon">
+    <i class="fas fa-ice-cream"></i>
+  </div>
+  <div class="timeline-content">
+    <h3>13. Chè (các loại)</h3>
+    <p><strong>Nguồn gốc:</strong> Từ thời phong kiến, phong phú nhất ở Huế.</p>
+    <p><strong>Phổ biến:</strong> Du khách nước ngoài trải nghiệm như món tráng miệng đặc sắc.</p>
+    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Xuất hiện trong nhiều thực đơn tráng miệng quốc tế.</p>
+  </div>
+</div>
+
+<!-- Món 14: Cà phê sữa đá -->
+<div class="timeline-item">
+  <div class="timeline-icon">
+    <i class="fas fa-coffee"></i>
+  </div>
+  <div class="timeline-content">
+    <h3>14. Cà phê sữa đá</h3>
+    <p><strong>Nguồn gốc:</strong> Cuối thế kỷ 19 khi cây cà phê du nhập từ Pháp.</p>
+    <p><strong>Phổ biến:</strong> Văn hóa quán cà phê đường phố giúp lan rộng khắp thế giới.</p>
+    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Nhiều bảng xếp hạng quốc tế xếp Top cà phê nên thử.</p>
+  </div>
+</div>
+
+<!-- Món 15: Bánh chưng – Bánh tét -->
+<div class="timeline-item">
+  <div class="timeline-icon">
+    <i class="fas fa-gift"></i>
+  </div>
+  <div class="timeline-content">
+    <h3>15. Bánh chưng – Bánh tét</h3>
+    <p><strong>Nguồn gốc:</strong> Truyền thuyết thời Hùng Vương (hơn 2.000 năm), biểu tượng Tết Việt.</p>
+    <p><strong>Phổ biến:</strong> Lan rộng trong cộng đồng người Việt toàn cầu mỗi dịp Tết.</p>
+    <p class="achievement"><i class="fas fa-trophy"></i><strong>Thành tựu:</strong> Gắn với các di sản văn hóa Tết Việt được quốc tế ghi nhận.</p>
+  </div>
+</div>
+
+        </div>
+    </div>
+</main>
+       
+    <footer>
+        <p>&copy; người đâu thưởng rau má</p>
+        
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/login-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Khám phá tinh hoa ẩm thực ba miền Bắc, Trung, Nam của Việt Nam. Tìm hiểu công thức và câu chuyện đằng sau mỗi món ăn quê hương.">
+    <meta name="keywords" content="ẩm thực, món ăn việt nam, công thức nấu ăn, phở, bún chả, bánh mì">
+    <title>Lịch Sử Hoạt Động - Ẩm Thực Quê Hương</title>
+    
+    <!-- Link đến CSS chung của toàn trang web -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link đến CSS riêng của trang Giới thiệu -->
+    <link rel="stylesheet" href="css/about-style.css">
+    <link rel="stylesheet" href="css/history-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- SỬ DỤNG LẠI HEADER TỪ TRANG CHỦ ĐỂ ĐỒNG BỘ GIAO DIỆN -->
+    <header>
+        <div class="container">
+            <!--link logo để luôn trỏ về trang chủ -->
+            <a href="index.html" class="logo">Ẩm Thực Quê Hương</a>
+            <nav>
+                <ul>
+                    <!--link Trang chủ để trỏ về index.html -->
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="index.html#dishes">Món Ăn</a></li>
+                     <li><a href="tieu-su-am-thuc.html">Hành Trình Món Việt</a></li>
+                      <li><a href="lich-su-hoat-dong.html">Lịch Sử Của Bạn</a></li>
+                    <li><a href="about.html">Giới Thiệu</a></li>
+                     <li><a href="lien-he.html">Liên Hệ</a></li> 
+                </ul>
+            </nav>
+            <div id="user-actions">
+                <a href="login.html" class="nav-button">Đăng Nhập</a>
+                <a href="login.html#register" class="nav-button">Đăng Ký</a>
+            </div>
+            <div id="user-info" class="hidden">
+                <span id="welcome-message"></span>
+                <button id="logout-btn">Đăng Xuất</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+    <div id="history-page-container">
+        
+        <!-- PHẦN 1: HIỂN THỊ KHI CHƯA ĐĂNG NHẬP -->
+        <div id="login-prompt">
+            <h2>Vui Lòng Đăng Nhập</h2>
+            <p>Bạn cần đăng nhập để xem lịch sử hoạt động, bao gồm các món ăn đã thích và những bình luận bạn đã gửi.</p>
+            <a href="login.html" class="nav-button" style="background-color: var(--primary-color); color: white;">Đi đến trang Đăng Nhập</a>
+        </div>
+
+        <!-- PHẦN 2: HIỂN THỊ KHI ĐÃ ĐĂNG NHẬP (MẶC ĐỊNH SẼ BỊ ẨN) -->
+        <div id="user-history-content" class="hidden">
+            <h2 id="history-welcome-message" style="text-align: center; font-size: 2.5rem; color: var(--primary-color); margin-bottom: 40px;">
+                <!-- JS sẽ điền tên người dùng vào đây -->
+            </h2>
+
+            <!-- Mục 1: Các món ăn đã thích -->
+            <section id="liked-dishes-section" class="history-section">
+                <h3><i class="fas fa-heart"></i> Món Ăn Bạn Đã Thích</h3>
+                <div class="dish-grid" id="liked-dishes-grid">
+                    <!-- JS sẽ điền các món ăn đã thích vào đây -->
+                </div>
+            </section>
+
+            <!-- Mục 2: Các bình luận đã gửi -->
+            <section id="comments-history-section" class="history-section">
+                <h3><i class="fas fa-comments"></i> Bình Luận Của Bạn</h3>
+                <div id="comments-history-list">
+                    <!-- JS sẽ điền các bình luận đã gửi vào đây -->
+                </div>
+            </section>
+        </div>
+
+    </div>
+</main>
+       
+    <footer>
+        <p>&copy; người đâu thưởng rau má</p>
+        
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/login-script.js"></script>
+    <script src="js/hoatDong-script.js"></script>
+</body>
+</html>
