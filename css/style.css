@@ -666,3 +666,24 @@ footer {
   box-shadow: 0 0 15px rgba(204, 201, 49, 0.6);
   transition: all 0.3s ease;
 }
+
+/* --- CSS cho Bảng Dinh Dưỡng --- */
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.nutrition-table thead {
+    background-color: #fdf6e3; /* Màu nền nhẹ nhàng giống màu nền trang */
+    color: var(--primary-color);
+    font-weight: bold;
+}
