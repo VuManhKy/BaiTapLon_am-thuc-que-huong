@@ -18,18 +18,18 @@
     <header>
         <div class="container">
             <!--link logo để luôn trỏ về trang chủ -->
-            <a href="index.html" class="logo">Ẩm Thực Quê Hương</a>
-            <nav>
-                <ul>
-                    <!--link Trang chủ để trỏ về index.html -->
-                    <li><a href="index.html">Trang Chủ</a></li>
-                    <li><a href="index.html#dishes">Món Ăn</a></li>
-                     <li><a href="tieu-su-am-thuc.html">Hành Trình Món Việt</a></li>
-                      <li><a href="lich-su-hoat-dong.html">Lịch Sử Của Bạn</a></li>
-                    <li><a href="about.html">Giới Thiệu</a></li>
-                     <li><a href="lien-he.html">Liên Hệ</a></li> 
-                </ul>
-            </nav>
+            <a href="index.html" class="logo">Ẩm Thực Quê Hương</a> <button id="menu-toggle" class="menu-toggle" aria-label="Mở menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="index.html#dishes">Món Ăn</a></li>
+                <li><a href="tieu-su-am-thuc.html">Hành Trình Món Việt</a></li>
+                <li><a href="lich-su-hoat-dong.html">Lịch Sử Của Bạn</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="lien-he.html">Liên Hệ</a></li>
+            </ul>
             <div id="user-actions">
                 <a href="login.html" class="nav-button">Đăng Nhập</a>
                 <a href="login.html#register" class="nav-button">Đăng Ký</a>
@@ -38,6 +38,7 @@
                 <span id="welcome-message"></span>
                 <button id="logout-btn">Đăng Xuất</button>
             </div>
+        </nav>
         </div>
     </header>
 

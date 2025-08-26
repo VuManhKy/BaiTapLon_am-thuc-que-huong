@@ -11,14 +11,12 @@
       ingredients:
         "Bánh phở, xương bò, thịt bò tái/chín, gừng, hành tím, quế, hồi, thảo quả, rau thơm, hành lá, chanh, ớt, nước mắm, muối, tiêu.",
     
-         nutrition: {
+      nutrition: {
         calories: "450-500 kcal",
         protein: "25g",
         fat: "15g"
       }
-
     },
-
     {
       id: 2,
       name: "Bún Chả",
@@ -30,14 +28,12 @@
       ingredients:
         "Bún tươi, thịt ba chỉ, thịt nạc vai, nước mắm, đường, giấm, tỏi, ớt, hạt tiêu, cà rốt, đu đủ xanh, rau thơm, xà lách.",
     
-         nutrition: {
+      nutrition: {
         calories: "400-450 kcal",
         protein: "20g",
         fat: "25g"
       }
-    
     },
-
     {
       id: 3,
       name: "Bánh Mì",
@@ -48,8 +44,13 @@
         "Bánh Mì Việt Nam là niềm tự hào của ẩm thực đường phố, đã nhiều lần lọt top những món ăn ngon nhất thế giới. Vỏ bánh giòn rụm vàng ươm, ruột xốp mềm, kết hợp cùng lớp nhân phong phú: pate béo ngậy, thịt nguội, chả lụa, rau dưa giòn mát và sốt mayonnaise đặc trưng. Tùy vùng miền, bánh mì có nhiều biến thể như bánh mì thịt nướng, bánh mì xíu mại hay bánh mì chay. Dù đơn giản hay cầu kỳ, ổ bánh mì nhỏ bé vẫn chứa đựng sự sáng tạo và tinh hoa ẩm thực Việt.",
       ingredients:
         "Bánh mì baguette, pate, thịt nguội, chả lụa, dưa leo, đồ chua (cà rốt, củ cải), rau thơm, xà lách, sốt mayonnaise, nước tương, ớt.",
-    },
 
+      nutrition: {
+        calories: "350-450 kcal", // Adjusted for a typical loaded Banh Mi
+        protein: "20g",
+        fat: "20g"
+      }
+    },
     {
       id: 4,
       name: "Cơm Tấm",
@@ -60,8 +61,13 @@
         "Cơm Tấm là đặc sản Sài Gòn, nổi bật với hạt gạo tấm vỡ mềm dẻo, ăn kèm nhiều món mặn hấp dẫn như sườn nướng, bì, chả trứng. Trên đĩa cơm, mỡ hành béo ngậy phủ lên hạt cơm trắng, thêm chút dưa chua, dưa leo tươi mát và chan nước mắm pha đậm đà. Cơm Tấm không chỉ là bữa ăn bình dân quen thuộc mà còn trở thành nét văn hóa ẩm thực của miền Nam, được người dân và du khách yêu thích.",
       ingredients:
         "Gạo tấm, sườn nướng, bì heo, chả trứng, mỡ hành, dưa leo, cà chua, đồ chua, trứng ốp la, nước mắm pha.",
-    },
 
+      nutrition: {
+        calories: "500-600 kcal", // Adjusted for a full plate
+        protein: "35g",
+        fat: "30g"
+      }
+    },
     {
       id: 5,
       name: "Bún Bò Huế",
@@ -72,8 +78,13 @@
         "Bún Bò Huế mang đậm dấu ấn cố đô, nổi tiếng với vị cay nồng, nước lèo đậm đà nấu từ xương bò, giò heo và mắm ruốc đặc trưng. Sợi bún to tròn, thịt bò thái lát, chả cua, giò heo được xếp đầy trong tô nước dùng đỏ au hấp dẫn. Rau sống, hoa chuối thái sợi và chanh ớt ăn kèm khiến hương vị thêm trọn vẹn. Đây không chỉ là món ăn no bụng mà còn là linh hồn của ẩm thực xứ Huế.",
       ingredients:
         "Bún sợi to, bắp bò, giò heo, chả cua, huyết heo, mắm ruốc, sả, ớt, hành lá, rau sống, hoa chuối bào, chanh, nước mắm, muối.",
-    },
 
+      nutrition: {
+        calories: "500-600 kcal", // Adjusted for a full bowl
+        protein: "30g",
+        fat: "25g"
+      }
+    },
     {
       id: 6,
       name: "Cao Lầu",
@@ -84,6 +95,11 @@
         "Cao Lầu là món ăn gắn liền với phố cổ Hội An, với sợi mì vàng óng dai đặc biệt, được chế biến từ gạo ngâm trong nước giếng Bá Lễ. Topping gồm thịt heo xá xíu ướp đậm đà, tóp mỡ giòn rụm, rau sống tươi xanh và ít nước dùng chan vừa phải. Cao Lầu là sự hòa quyện của vị mặn mà, béo ngậy, thanh mát, mang lại trải nghiệm độc đáo khó tìm thấy ở nơi khác. Đây được xem như “linh hồn” ẩm thực của Hội An.",
       ingredients:
         "Mì Cao Lầu, thịt heo xá xíu, tóp mỡ, giá đỗ, rau sống (xà lách, rau thơm), nước dùng ninh từ xương, hành phi.",
+      nutrition: {
+        calories: "400-450 kcal",
+        protein: "25g",
+        fat: "20g"
+      }
     },
 
     // Món ăn vặt
@@ -97,8 +113,12 @@
         "Nem Rán (hay còn gọi là Chả Giò ở miền Nam) là món ăn truyền thống trong các dịp lễ Tết và mâm cỗ gia đình. Những chiếc nem được cuốn khéo léo từ lớp bánh đa nem mỏng, nhân thịt heo, mộc nhĩ, miến, cà rốt và trứng, sau đó chiên vàng giòn rụm. Khi cắn, lớp vỏ giòn tan hòa quyện với phần nhân mềm thơm, đậm đà. Nem rán thường ăn kèm rau sống, bún và nước chấm pha chua ngọt, tạo nên hương vị hấp dẫn khó cưỡng.",
       ingredients:
         "Thịt heo băm, mộc nhĩ, miến dong, cà rốt, trứng gà, hành khô, bánh đa nem, hạt tiêu, nước mắm, dầu ăn, rau sống.",
+      nutrition: {
+        calories: "350-450 kcal",
+        protein: "15g",
+        fat: "25g"
+      }
     },
-
     {
       id: 8,
       name: "Bánh Xèo",
@@ -109,8 +129,12 @@
         "Bánh Xèo miền Nam có lớp vỏ vàng óng, giòn rụm nhờ bột gạo trộn với bột nghệ và nước cốt dừa. Nhân bánh gồm tôm, thịt heo, giá đỗ, đôi khi thêm nấm hoặc hải sản. Khi ăn, người ta cắt bánh, cuốn cùng rau sống và chấm nước mắm chua ngọt. Sự kết hợp của lớp vỏ giòn, nhân đậm đà và rau tươi mát tạo nên trải nghiệm ẩm thực độc đáo, khiến bánh xèo trở thành món ăn vặt được yêu thích khắp ba miền.",
       ingredients:
         "Bột gạo, bột nghệ, nước cốt dừa, tôm, thịt ba chỉ, giá đỗ, nấm, hành lá, rau sống, nước mắm pha.",
+      nutrition: {
+        calories: "450-550 kcal",
+        protein: "20g",
+        fat: "30g"
+      }
     },
-
     {
       id: 9,
       name: "Gỏi Cuốn",
@@ -121,8 +145,12 @@
         "Gỏi Cuốn là món ăn thanh mát và bổ dưỡng, thường được chọn cho những bữa ăn nhẹ. Bánh tráng mềm dẻo cuốn cùng tôm, thịt heo luộc, bún tươi và rau sống. Khi ăn, gỏi cuốn chấm với nước mắm tỏi ớt hoặc tương đậu phộng béo ngậy, mang lại cảm giác vừa thanh đạm vừa đậm đà. Đây là món ăn nổi tiếng của Việt Nam được nhiều du khách quốc tế ưa chuộng bởi sự đơn giản nhưng tinh tế.",
       ingredients:
         "Bánh tráng, bún tươi, tôm luộc, thịt heo luộc, rau thơm, xà lách, hẹ, nước mắm chua ngọt hoặc tương đậu phộng.",
+      nutrition: {
+        calories: "150-250 kcal",
+        protein: "10g",
+        fat: "5g"
+      }
     },
-
     {
       id: 10,
       name: "Bột Chiên",
@@ -133,8 +161,12 @@
         "Bột Chiên là món ăn vặt quen thuộc với học sinh, sinh viên Sài Gòn. Những miếng bột gạo được chiên vàng giòn bên ngoài, dẻo bên trong, rồi đảo cùng trứng gà thơm phức. Khi dọn ra, bột chiên được ăn kèm đu đủ bào chua ngọt, hành lá và chấm với xì dầu pha tương ớt. Vị giòn, dẻo, béo và chua ngọt kết hợp hài hòa, tạo nên sức hút khó cưỡng.",
       ingredients:
         "Bột gạo, trứng gà, hành lá, đu đủ bào, xì dầu, giấm, đường, tương ớt, dầu ăn.",
+      nutrition: {
+        calories: "350-450 kcal",
+        protein: "12g",
+        fat: "20g"
+      }
     },
-
     {
       id: 11,
       name: "Chè Ba Miền",
@@ -145,8 +177,12 @@
         "Chè là món ăn tráng miệng ngọt mát phổ biến ở khắp ba miền Việt Nam, với vô số biến thể phong phú. Từ chè đậu xanh, đậu đỏ, đậu đen đến chè thập cẩm với thạch, trân châu và nước cốt dừa béo ngậy, mỗi loại chè đều mang hương vị riêng. Vào những ngày hè oi ả, một cốc chè mát lạnh không chỉ giải nhiệt mà còn gợi cảm giác vui tươi, gần gũi. Đây là món ăn vặt dân dã nhưng luôn có sức hút đặc biệt.",
       ingredients:
         "Đậu xanh, đậu đỏ, đậu đen, bột báng, hạt sen, thạch rau câu, nước cốt dừa, đường, đá bào.",
+      nutrition: {
+        calories: "300-400 kcal",
+        protein: "5g",
+        fat: "10g"
+      }
     },
-
     {
       id: 12,
       name: "Bánh Tráng Nướng",
@@ -157,6 +193,11 @@
         "Bánh Tráng Nướng, thường được gọi vui là “pizza Việt Nam”, là món ăn vặt cực kỳ phổ biến ở Đà Lạt và nhiều nơi khác. Lớp bánh tráng mỏng được nướng giòn trên than hồng, thêm trứng cút, hành lá, xúc xích, thịt băm, ruốc khô và sốt mayonnaise. Mỗi chiếc bánh vừa giòn, vừa béo, vừa mặn ngọt, khiến ai ăn thử một lần đều nhớ mãi.",
       ingredients:
         "Bánh tráng, trứng cút, hành lá, xúc xích, thịt băm, ruốc khô, phô mai, sốt mayonnaise, tương ớt.",
+      nutrition: {
+        calories: "300-400 kcal",
+        protein: "15g",
+        fat: "20g"
+      }
     },
 
     // Đặc sản
@@ -169,6 +210,11 @@
       description:
         "Phở cuốn Hà Nội có bánh phở mềm cuốn thịt bò xào thơm, rau sống, chấm nước mắm tỏi ớt đậm đà.",
       ingredients: "Bánh phở, thịt bò, xà lách, rau thơm, nước mắm, tỏi, ớt.",
+      nutrition: {
+        calories: "250-350 kcal",
+        protein: "15g",
+        fat: "10g"
+      }
     },
     {
       id: 14,
@@ -180,6 +226,11 @@
         "Mì Quảng là đặc sản Quảng Nam, sợi mì vàng dai, nước dùng ít nhưng đậm đà, ăn kèm tôm, thịt và bánh tráng mè.",
       ingredients:
         "Mì Quảng, tôm, thịt gà, trứng, lạc rang, rau sống, bánh tráng.",
+      nutrition: {
+        calories: "400-500 kcal",
+        protein: "25g",
+        fat: "20g"
+      }
     },
     {
       id: 15,
@@ -190,6 +241,11 @@
       description:
         "Bánh căn là món bánh gạo nhỏ nướng trong khuôn đất, ăn kèm nước chấm và rau sống, đặc sản miền Nam Trung Bộ.",
       ingredients: "Bột gạo, trứng, hải sản (tôm, mực), hành lá, mỡ hành.",
+      nutrition: {
+        calories: "300-400 kcal",
+        protein: "10g",
+        fat: "15g"
+      }
     },
     {
       id: 16,
@@ -200,6 +256,11 @@
       description:
         "Lẩu mắm miền Tây có nước dùng nấu từ mắm cá sặc, đậm đà và thơm nồng, ăn kèm đa dạng rau đồng và hải sản.",
       ingredients: "Mắm cá, cá, tôm, mực, thịt ba chỉ, cà tím, rau các loại.",
+      nutrition: {
+        calories: "500-600 kcal",
+        protein: "30g",
+        fat: "25g"
+      }
     },
     {
       id: 17,
@@ -210,6 +271,11 @@
       description:
         "Chả Cá Lã Vọng là đặc sản Hà Nội, cá lăng tẩm ướp nghệ nướng, ăn kèm bún, lạc rang, thì là và mắm tôm.",
       ingredients: "Cá lăng, nghệ, thì là, hành lá, bún, mắm tôm, lạc rang.",
+      nutrition: {
+        calories: "450-550 kcal",
+        protein: "30g",
+        fat: "25g"
+      }
     },
     {
       id: 18,
@@ -220,6 +286,11 @@
       description:
         "Bánh bèo Huế nhỏ xinh, mềm mịn, ăn kèm tôm cháy, mỡ hành và chan nước mắm mặn ngọt.",
       ingredients: "Bột gạo, tôm khô, hành lá, mỡ hành, nước mắm.",
+      nutrition: {
+        calories: "200-300 kcal",
+        protein: "8g",
+        fat: "10g"
+      }
     },
     {
       id: 19,
@@ -230,6 +301,11 @@
       description:
         "Thịt chua Phú Thọ được làm từ thịt lợn ướp thính, lên men tự nhiên, có vị chua nhẹ đặc trưng.",
       ingredients: "Thịt lợn nạc, bì lợn, thính gạo, lá ổi.",
+      nutrition: {
+        calories: "250-350 kcal",
+        protein: "20g",
+        fat: "15g"
+      }
     },
     {
       id: 20,
@@ -240,6 +316,11 @@
       description:
         "Bánh gai truyền thống với vỏ đen từ lá gai, nhân đậu xanh dừa ngọt bùi, thường xuất hiện trong lễ hội.",
       ingredients: "Bột nếp, lá gai, đậu xanh, dừa nạo, mỡ lợn, đường.",
+      nutrition: {
+        calories: "200-250 kcal",
+        protein: "5g",
+        fat: "8g"
+      }
     },
     {
       id: 21,
@@ -251,6 +332,11 @@
         "Nem chua Thanh Hóa nổi tiếng cả nước với hương vị chua nhẹ, cay nồng của ớt, thơm mùi tỏi và lá đinh lăng. Đây là món ăn chơi hấp dẫn và cũng là món quà ý nghĩa của xứ Thanh.",
       ingredients:
         "Thịt heo nạc, bì lợn, thính gạo, tỏi, ớt, lá đinh lăng, lá chuối, gia vị.",
+      nutrition: {
+        calories: "150-200 kcal",
+        protein: "15g",
+        fat: "8g"
+      }
     },
     {
       id: 22,
@@ -262,5 +348,10 @@
         "Hủ tiếu là món ăn đặc sản miền Nam có nguồn gốc Hoa, nước dùng ngọt thanh từ xương heo, sợi hủ tiếu dai mềm, ăn kèm thịt heo, tôm, gan và rau sống. Các biến thể nổi tiếng gồm hủ tiếu Nam Vang, Mỹ Tho, Sa Đéc.",
       ingredients:
         "Sợi hủ tiếu, xương heo, thịt nạc, gan heo, tôm, trứng cút, giá đỗ, hẹ, xà lách, hành phi, nước mắm, muối, tiêu.",
+      nutrition: {
+        calories: "400-500 kcal",
+        protein: "25g",
+        fat: "15g"
+      }
     },
   ];
