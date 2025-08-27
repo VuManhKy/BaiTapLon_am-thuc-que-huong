@@ -1,4 +1,3 @@
-
 .login-page-bg {
     /* Dùng gradient để nền  */
     background: linear-gradient(135deg, #c0392b, #8e44ad);
@@ -50,8 +49,38 @@
     font-weight: 600;
 }
 
+/* Phần mới: Wrapper cho input mật khẩu */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 18px; /* Giữ lại margin dưới của input */
+}
+
+/* CSS cho icon hiển thị mật khẩu */
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+
 .form-box input[type="text"],
-.form-box input[type="password"] {
+.form-box input[type="password"],
+.form-box input[type="email"] { /* Thêm input type="email" vào đây */
     width: 100%;
     padding: 14px 18px;
     margin-bottom: 18px;
@@ -60,6 +89,13 @@
     font-size: 1rem;
     background-color: #f9f9f9;
     transition: all 0.3s ease;
+}
+
+/* Thêm padding-right cho trường mật khẩu để không bị icon che */
+.password-wrapper input[type="password"],
+.password-wrapper input[type="text"] {
+    padding-right: 50px; 
+    margin-bottom: 0; /* Xóa margin vì đã có ở wrapper */
 }
 
 .form-box input:focus {
